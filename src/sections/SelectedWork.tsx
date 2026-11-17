@@ -12,8 +12,6 @@ import { portfolioData, type Project } from '../data/portfolio';
 import { gsap } from '../lib/gsap';
 import { MagneticButton } from '../components/MagneticButton';
 import type Lenis from 'lenis';
-import pujapathHeroImg from '../assets/projects/pujapath/hero-bg.webp';
-import financialPortalImg from '../assets/projects/financial-portal.svg';
 
 interface SelectedWorkProps {
   reducedMotion?: boolean;
