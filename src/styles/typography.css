@@ -1,0 +1,131 @@
+/* Typography System */
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background-color: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Display Titles */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Fluid Heading Scales */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.75rem, 13vw, 12.5rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.section-title-large {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 7vw, 6.25rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.section-title-medium {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4.5vw, 3.75rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.body-large {
+  font-size: clamp(1.125rem, 2vw, 1.625rem);
+  line-height: 1.45;
+  font-weight: 300;
+  letter-spacing: -0.015em;
+}
+
+.body-regular {
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.body-small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/* Editorial Metadata & Tags */
+.label-editorial {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  background-color: transparent;
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+  border-radius: 9999px;
+  transition: all var(--duration-fast) ease;
+}
+
+.badge-tag:hover {
+  border-color: var(--text-primary);
+  background-color: var(--text-primary);
+  color: var(--bg);
+}
+
+/* Hover Underline Animation */
+.hover-underline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: currentColor;
+  transition: width var(--duration-fast) var(--ease-editorial);
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Screen Reader Only Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

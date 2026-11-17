@@ -1,0 +1,42 @@
+:root {
+  /* Editorial Palette */
+  --bg: #F7F7F5;
+  --text-primary: #101010;
+  --text-secondary: #6F6F6F;
+  --text-muted: #9A9A95;
+  --border: #D8D8D4;
+  --border-subtle: #E5E5E0;
+  --surface: #FFFFFF;
+  --surface-alt: #EFEFEA;
+  
+  /* Restrained Accent */
+  --accent: #D03B1E;
+  --accent-light: rgba(208, 59, 30, 0.08);
+  --status-live: #10B981;
+
+  /* Typography Stack */
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Container & Spacing */
+  --container-max: 1400px;
+  --container-narrow: 1100px;
+  --gutter: clamp(1.25rem, 4.5vw, 4rem);
+  --nav-height: 72px;
+
+  /* Timing */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snappy: cubic-bezier(0.25, 1, 0.5, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 800ms;
+
+  /* Z-Index Hierarchy */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-floating: 50;
+  --z-nav: 100;
+  --z-modal: 200;
+  --z-loader: 1000;
+}
